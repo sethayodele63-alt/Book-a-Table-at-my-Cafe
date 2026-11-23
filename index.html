@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name = "viewport" content = "width = device-width,Initial-scale = 1">
+  <meta property = "og:title" content = "My first cafe">
+  <meta propery = "og:type" content = "website">
+  <meta property = "og:url" content = "https://JalapenoCafé.com">
+  <title>JalapenoCafé</title>
+  <link href = "style.css" rel="stylesheet">
+</head>
+<body>
+ <header>
+    <nav class = "navbar">
+        <a href = "#menu">Menu</a>
+        <a href = "#specials">Specials</a>
+        <a href = "#find">Find us</a>
+        <a class = "cta" href = "#Book">Book a Table</a>
+    </nav>
+
+<div id = "hero"> 
+  <h1>Jalapeno Café</h1>
+  <p class = "tagline">Satisfy your cravings</p>
+  <p id = "open"></p>
+  <button onlick = "alert('Call us at 08-111222333 to order!')">Order now</button>
+</div>
+</header>
+
+<main class = "grid">
+<section class = "card wide" id = "story">
+  <h2>Our Story</h2>
+  <p>We started on the desert Providing comfort to tourists</p>
+  <P>Then we moved to the city became world class</P>
+  <img src = "cafe edits.jpg" alt = "Welcome to our cafe you are never late" width = "400">
+</section>
+
+<section class = "card tall" id= "specials">
+  <h2>Today's Specials</h2>
+  <p>Hotdogs on sale: old price :<del>$12</del> new price : <ins>$6</ins></ins></p>
+  <p>Happy <mark>Black </mark>Friday</p>
+  <article>
+    <h3>HOTDOG DAY</h3>
+    <p>Posted <time datetime="2026-11-22">November 22</time></p>
+  <figure>
+    <img src = "HotDog.jpg" alt = "Hotdogsss">
+    <figcaption>Different flavours of HOTDOGS to your taste</figcaption>
+  </figure>
+  
+  </article>
+</section>
+
+<section class = "card">
+  <h2 id = "menu">Menu</h2>
+  <p>
+    <img src = "hotdogs.jpg" alt = "hotdogs" height = "120">
+    <img src = "cofee.webp" alt = "coffee" height = "120">
+    <img src = "Nutella-Croissants-hero.webp" alt = 'croissant' height = '120'>
+    <img src = "strawberry-popsicles-10.jpg" alt = "popsicle" height = '120'>
+    <img src = "pancake.jpeg" alt = "pancakes" height = "120">
+  </p>
+<table>
+  <tr><th>Item</th><th>Price</th></tr>
+  <tr><td>&#9749;Espresso</td><td>$5</td></tr>
+  <tr><td>&#9749;Cappucino <span class = "tag vegan">Vegan</span></td><td>$2</td></tr>
+  <tr><td>&#127789;Hotdogs</td><td>$7</td></tr>
+  <tr><td>&#127826;Cherry croissant <span class = "tag">New</span></td><td>$4</td></tr>
+  <tr><td>&#1279374;Pancake stack</td><td>$7</td><tr> 
+</table>
+</section>
+
+<section class = "card">
+  <h2>Guest reviews</h2>
+  <blockquote>This hotdog is the best I have had in my life</blockquote><p>Talora</p>
+  <blockquote>The cappucino is so flavorful</blockquote><p>Uchechi</p>
+  <p><cite>food-magazine</cite></p>
+</section>
+
+<section class = "card">
+  <h2 id = "hours"></h2>
+  <d1>
+    <dt>Monday to Friday</dt>
+    <dd>7:00 to 16:00</dd>
+
+    <dt>Saturday and Sunday</dt>
+    <dd> 8:00 to 15:00</dd>
+
+  </d1>
+  <a href = "https://instagram.com" target = "_blank"></a>
+</section>
+
+<section class = "card wide">
+    <h2 id = "find"></h2>
+    <iframe src = "https://maps.google.com/maps?q=Lagos&output=embed" title = "Map to Jalapenos cafe"></iframe>
+</section>
+
+<section class="card wide">
+  <h2>Questions</h2>
+  <details open>
+    <summary>Do you have vegan options?</summary>
+    <p>Yes! Ask for oat milk, and look for the green Vegan tag.</p>
+  </details>
+  <details>
+    <summary>Do you have cold coffees?</summary>
+    <p>Of course.Anyhow you want it</p>
+  </details>
+  <details>
+    <summary>Do you different pancake flavours</summary>
+    <p>Yes Ladies and Gentlemen</p>
+  </details>
+</section>
+
+<aside><h2>Wifi</h2>
+<p><kbd>The password is 1234</kbd></p>
+</aside>
+
+<section class = "card full" id = "book">
+  <h2>Book a Table</h2>
+  <form action ="/action_page.php">
+    <fieldset>
+      <legend>Your Details</legend>
+      <label for ="name">Name</label>
+      <input type = "text" id="name" name = "name">
+      <label for = "email">Email</label>
+      <input type = "email" id="email" name="email">
+      <label for = "day">Day</label>
+      <input type = "date" id = "date" name="date">
+      <label for = "time">Time</label>
+      <input type ="time" id = "time" name = "time">
+    </fieldset>
+
+    <label for ="guests">Guests</label>
+    <input type = "number" id = "guests" name = "guests">
+
+    <p>Where do you want to sit?</p>
+    <label><input type = "radio" name = "seats" value = "terrace">Terrace</label>
+
+    <label><input type ="radio" name = "seats" value = "Inside">Inside</label>
+    <label><input type = "checkbox" name = "Birthday">A Birthday</label>
+    <label for="notes">Anything else?</label>
+    <textarea id="notes" name="notes" rows="3"></textarea>
+    <input type="submit" value="Book my table">
+  </form>
+</section>
+</main>
+
+<footer>
+  <p>>&copy;2026 Jalapeno Café, 15 victoria island Lagos</p>
+</footer>
+<script>
+const hour = new Date().getHours();
+if (hour >= 7 && hour < 17) {
+  document.getElementById("open").innerHTML = "We are open now!";
+} else {
+  document.getElementById("open").innerHTML = "Closed now. See you tomorrow!";
+}
+</script>
+
+    
+</body>
+</html>
